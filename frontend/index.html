@@ -1,0 +1,36 @@
+
+<!-- QR Code Generator Frontend -->
+<!-- This HTML file provides the user interface for generating QR codes. -->
+<!-- It includes an input field for text, a generate button, display area for the QR image, and a download link. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Set the page title -->
+    <title>QR Code Generator</title>
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for the application -->
+    <div class="container fade-in">
+        <!-- Application title -->
+        <h1>QR Code Generator</h1>
+        <!-- Input field for user to enter text or URL -->
+        <input type="text" id="qrText" placeholder="Enter link or text">
+        <!-- Button to trigger QR code generation -->
+        <button onclick="generateQR()">Generate</button>
+        <!-- Container for displaying the QR code image -->
+        <div class="qr-box">
+            <img id="qrImage" alt="Generated QR Code">
+        </div>
+        <!-- Download link for the QR code image, initially hidden -->
+        <a id="downloadBtn" download="qrcode.png">Download</a>
+        <!-- Element to display error messages -->
+        <div id="errorMsg" style="color: red; margin-top: 10px;"></div>
+    </div>
+    <!-- Link to the external JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
