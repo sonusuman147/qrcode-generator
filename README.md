@@ -33,18 +33,19 @@ This project is beginner-friendly and explains every step from development to de
 --------------------------------------------------
 
 ## 📁 Folder Structure
-
+```
 QR_Code_Generator_Full_Project/
-├── README.md
-├── TODO.md
-├── backend/
-│   ├── app.py
-│   └── requirements.txt
-└── frontend/
-    ├── index.html
-    ├── script.js
-    └── style.css
+├── README.md              # Project documentation
+├── TODO.md                # Future improvements and tasks
+├── backend/               # Backend (Flask API)
+│   ├── app.py              # Main Flask application
+│   └── requirements.txt    # Backend dependencies
+└── frontend/              # Frontend files
+    ├── index.html          # Main UI page
+    ├── script.js           # Frontend JavaScript logic
+    └── style.css           # Styling and animations
 
+```
 --------------------------------------------------
 
 ## 🧩 Backend Dependencies (backend/requirements.txt)
