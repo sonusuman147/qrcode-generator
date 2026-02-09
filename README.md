@@ -6,33 +6,33 @@ This project is beginner-friendly and explains every step from development to de
 
 --------------------------------------------------
 
-🚀 Project Overview
+# 🚀 Project Overview
 
-Frontend
+## Frontend
 - HTML, CSS, JavaScript
 - Animated and responsive UI
 - Text/URL input field
 - Generate QR button
 - QR display with auto-download
 
-Backend
+## Backend
 - Python Flask
 - QR generation using qrcode library
 - Base64 image response
 - CORS enabled
 
-Connection
+## Connection
 - Frontend sends POST request to backend
 - Backend returns QR image data
 - Frontend displays and enables download
 
-Deployment
+## Deployment
 - Frontend: Netlify
 - Backend: Render
 
 --------------------------------------------------
 
-📁 Folder Structure
+## 📁 Folder Structure
 
 QR_Code_Generator_Full_Project/
 ├── README.md
@@ -47,7 +47,7 @@ QR_Code_Generator_Full_Project/
 
 --------------------------------------------------
 
-🧩 Backend Dependencies (backend/requirements.txt)
+## 🧩 Backend Dependencies (backend/requirements.txt)
 
 flask
 qrcode[pil]
@@ -55,7 +55,7 @@ flask-cors
 
 --------------------------------------------------
 
-🖥️ Local Setup & Running (Windows)
+# 🖥️ Local Setup & Running (Windows)
 
 1. Open Command Prompt  
    Press Win + R → type cmd → Enter
@@ -89,7 +89,7 @@ flask-cors
 
 --------------------------------------------------
 
-✅ Testing the Application
+## ✅ Testing the Application
 
 1. Open browser  
 2. Go to http://localhost:8000  
@@ -100,7 +100,7 @@ flask-cors
 
 --------------------------------------------------
 
-🔄 How Frontend & Backend Connect
+## 🔄 How Frontend & Backend Connect
 
 - Frontend uses fetch() with POST request
 - Sends JSON: {"text": "user input"}
@@ -112,7 +112,7 @@ flask-cors
 
 --------------------------------------------------
 
-🔁 Complete Working Flow
+## 🔁 Complete Working Flow
 
 1. User opens frontend  
 2. Enters text or URL  
@@ -130,7 +130,7 @@ flask-cors
 
 🌍 Deployment Guide
 
-Frontend Deployment (Netlify)
+## Frontend Deployment (Netlify)
 1. Go to https://netlify.com
 2. Login / Sign up
 3. Click Sites → Deploy manually
@@ -138,7 +138,7 @@ Frontend Deployment (Netlify)
 5. Deployment completes instantly
 6. Copy Netlify URL
 
-Backend Deployment (Render)
+## Backend Deployment (Render)
 1. Go to https://render.com
 2. Login / Sign up
 3. Push backend folder to GitHub
@@ -151,7 +151,7 @@ Backend Deployment (Render)
 
 --------------------------------------------------
 
-🔗 Connect Deployed Services
+## 🔗 Connect Deployed Services
 
 1. Open frontend/script.js
 2. Update backend URL:
@@ -160,13 +160,13 @@ Backend Deployment (Render)
 
 --------------------------------------------------
 
-🛠️ Optional Environment Variable (Render)
+## 🛠️ Optional Environment Variable (Render)
 
 FLASK_ENV=production
 
 --------------------------------------------------
 
-❗ Troubleshooting
+## ❗ Troubleshooting
 
 - Backend not starting → activate venv, install dependencies
 - Frontend not loading → check port 8000
