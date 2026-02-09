@@ -1,0 +1,97 @@
+
+/* QR Code Generator Styles */
+/* This CSS file styles the QR code generator interface with a modern, animated design. */
+
+/* Body styling: Full height background with gradient and centered content */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2); /* Gradient background */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Horizontal center */
+    align-items: center; /* Vertical center */
+    font-family: Arial; /* Font family */
+    margin: 0; /* Remove default margin */
+}
+
+/* Container for the main application content */
+.container {
+    background: white; /* White background for contrast */
+    padding: 30px; /* Padding around content */
+    border-radius: 12px; /* Rounded corners */
+    text-align: center; /* Center text alignment */
+    animation: pop 0.6s ease; /* Pop-in animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Keyframe animation for the container pop effect */
+@keyframes pop {
+    from {
+        transform: scale(0.8); /* Start smaller */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: scale(1); /* End at normal size */
+        opacity: 1; /* End visible */
+    }
+}
+
+/* Button styling for the generate button */
+button {
+    padding: 10px; /* Padding inside button */
+    width: 100%; /* Full width */
+    background: #667eea; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+/* Hover effect for the button */
+button:hover {
+    background: #5a67d8; /* Darker shade on hover */
+}
+
+/* Input field styling */
+input[type="text"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside input */
+    margin-bottom: 15px; /* Margin below */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+/* Image styling for the QR code */
+img {
+    width: 200px; /* Fixed width */
+    margin-top: 15px; /* Margin above */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Download button styling, initially hidden */
+#downloadBtn {
+    display: none; /* Hidden by default */
+    margin-top: 10px; /* Margin above */
+    background: #48bb78; /* Green background */
+    color: white; /* Text color */
+    padding: 8px 16px; /* Padding */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: background 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for the download button */
+#downloadBtn:hover {
+    background: #38a169; /* Darker green on hover */
+}
+
+/* Error message styling */
+#errorMsg {
+    color: red; /* Red text for errors */
+    margin-top: 10px; /* Margin above */
+    font-weight: bold; /* Bold text */
+}
